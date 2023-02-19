@@ -1,3 +1,27 @@
 body {
     padding-top: 5rem;
 }
+
+mark.red {
+    color:#ff0000;
+    background: none;
+}
+
+.form-header{
+    font-weight: bold;
+}
+
+.text-field{
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: #73b0ff;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    margin: 8px 10px;
+    padding: 12px 0;
+    width: 10%;
+}

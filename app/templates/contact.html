@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<section class="header">
+    <h1 class="header-title">Contact Form</h1>
+    <p class="header-description">Fill in this form to contact the site owners</p>    
+</section>
+
+<form method="POST" action="">
+    {{ form.csrf_token }}
+    <p class="form-header">Name <mark class="red">[Required]</mark></p>
+    <p>Please enter your full name</p>
+    {{ form.name }}
+
+    <p class="form-header">Email <mark class="red">[Required]</mark></p>
+    <p>Please enter your email address</p>
+    {{ form.email }}
+
+
+    <p class="form-header">Subject <mark class="red">[Required]</mark></p>
+    <p>Please enter the subject for your message</p>
+    {{ form.subject }}
+
+
+    <p class="form-header">Message <mark class="red">[Required]</mark></p>
+    <p>Please enter the message you would like to send</p>
+    {{ form.textArea }}
+
+    <br>
+    <button type="submit" class="btn">Send</button>
+</form>
+
+
+{% endblock %}
